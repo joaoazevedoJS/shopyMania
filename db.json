@@ -4,19 +4,23 @@
       "id": "1",
       "selling_price": 259900,
       "price": 281399,
-      "installments": 10,
+      "installment_id": "10",
+      "installment": 10,
       "installment_rate": 5,
+      "has_installment_rate": true,
       "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-      "image": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
     },
     {
       "id": "2",
       "selling_price": 259900,
       "price": 281399,
-      "installments": 10,
+      "installment_id": "10",
+      "installment": 10,
       "installment_rate": 0,
+      "has_installment_rate": false,
       "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-      "image": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
     }
   ],
   "collections": [
@@ -28,21 +32,125 @@
           "id": "1",
           "selling_price": 259900,
           "price": 281399,
-          "installments": 10,
+          "installment_id": "10",
+          "installment": 10,
           "installment_rate": 5,
+          "has_installment_rate": true,
           "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-          "image": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
         },
         {
           "id": "2",
           "selling_price": 259900,
           "price": 281399,
-          "installments": 10,
+          "installment_id": "10",
+          "installment": 10,
           "installment_rate": 0,
+          "has_installment_rate": false,
           "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-          "image": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
         }
       ]
+    }
+  ],
+  "payments": [
+    {
+      "id": "1",
+      "name":"Credit card"
+    },
+    {
+      "id": "2",
+      "name": "Debit card"
+    },
+    {
+      "id": "3",
+      "name": "Boleto"
+    }
+  ],
+  "installments": [
+    {
+      "id": "1",
+      "payment_id": "1",
+      "installment": 1,
+      "installment_rate": 0.50
+    },
+    {
+      "id": "2",
+      "payment_id": "1",
+      "installment": 2,
+      "installment_rate": 1
+    },
+    {
+      "id": "3",
+      "payment_id": "1",
+      "installment": 3,
+      "installment_rate": 1.5
+    },
+    {
+      "id": "4",
+      "payment_id": "1",
+      "installment": 4,
+      "installment_rate": 2
+    },
+    {
+      "id": "5",
+      "payment_id": "1",
+      "installment": 5,
+      "installment_rate": 2.5
+    },
+    {
+      "id": "6",
+      "payment_id": "1",
+      "installment": 6,
+      "installment_rate": 3
+    },
+    {
+      "id": "7",
+      "payment_id": "1",
+      "installment": 7,
+      "installment_rate": 3.5
+    },
+    {
+      "id": "8",
+      "payment_id": "1",
+      "installment": 8,
+      "installment_rate": 4
+    },
+    {
+      "id": "9",
+      "payment_id": "1",
+      "installment": 9,
+      "installment_rate": 4.5
+    },
+    {
+      "id": "10",
+      "payment_id": "1",
+      "installment": 10,
+      "installment_rate": 5
+    },
+    {
+      "id": "11",
+      "payment_id": "1",
+      "installment": 11,
+      "installment_rate": 5.5
+    },
+    {
+      "id": "12",
+      "payment_id": "1",
+      "installment": 12,
+      "installment_rate": 6
+    },
+    {
+      "id": "13",
+      "payment_id": "2",
+      "installment": 1,
+      "installment_rate": 3.5
+    },
+    {
+      "id": "14",
+      "payment_id": "3",
+      "installment": 1,
+      "installment_rate": 0
     }
   ]
 }
