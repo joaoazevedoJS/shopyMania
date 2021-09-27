@@ -19,6 +19,8 @@ export const ProductContainer = styled.div`
 `;
 
 export const ProductImage = styled.div`
+  position: relative;
+
   width: 100%;
 
   margin-bottom: 2rem;

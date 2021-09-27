@@ -56,7 +56,7 @@
   "payments": [
     {
       "id": "1",
-      "name":"Credit card"
+      "name": "Credit card"
     },
     {
       "id": "2",
@@ -72,7 +72,7 @@
       "id": "1",
       "payment_id": "1",
       "installment": 1,
-      "installment_rate": 0.50
+      "installment_rate": 0.5
     },
     {
       "id": "2",
@@ -151,6 +151,13 @@
       "payment_id": "3",
       "installment": 1,
       "installment_rate": 0
+    }
+  ],
+  "wishlist": [
+    {
+      "id": "2",
+      "user_id": "1",
+      "product_id": "2"
     }
   ]
 }
