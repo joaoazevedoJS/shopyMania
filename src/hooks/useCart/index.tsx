@@ -7,6 +7,8 @@ import { CartContextData, CartData, UpdateProductAmount } from './types';
 
 import axiosAPI from '../../services/axiosAPI';
 
+export * from './types';
+
 const CartContext = createContext<CartContextData>({} as CartContextData);
 
 const CartProvider: FC = ({ children }) => {

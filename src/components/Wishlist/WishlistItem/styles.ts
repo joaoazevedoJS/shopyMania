@@ -1,45 +1,32 @@
 import styled from 'styled-components';
 
-export const ProductContainer = styled.div`
-  position: relative;
+export const WishlistItemContainer = styled.li`
+  width: 15.5rem;
 
-  background: var(--gray-0);
-  border-radius: 0.5rem;
+  > div {
+    display: flex;
+    align-items: center;
 
-  padding: 2rem;
-
-  width: 100%;
-
-  flex: 1;
-
-  &:hover {
-    box-shadow: 0px 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+    img {
+      width: 4rem;
+      margin-right: 0.5rem;
+    }
   }
 `;
 
-export const ProductImage = styled.div`
-  position: relative;
+export const WishlistItemInfo = styled.div`
+  p {
+    margin-bottom: 1rem;
 
-  width: 100%;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
 
-  margin-bottom: 2rem;
-
-  img {
-    width: 100%;
+    color: var(--gray-900);
   }
 `;
 
-export const ProductDescription = styled.p`
-  margin-bottom: 1.5rem;
-
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-
-  color: var(--gray-900);
-`;
-
-export const ProductPrice = styled.div`
+export const WishlistItemPrice = styled.div`
   display: flex;
   flex-direction: column;
 
@@ -58,33 +45,15 @@ export const ProductPrice = styled.div`
 
   > strong {
     font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
     letter-spacing: -0.005em;
 
     color: var(--red-500);
   }
-
-  div {
-    margin-top: 0.25rem;
-
-    span {
-      color: var(--gray-700);
-    }
-
-    strong {
-      color: var(--gray-900);
-    }
-
-    span,
-    strong {
-      font-size: 0.75rem;
-      line-height: 1rem;
-    }
-  }
 `;
 
-export const ProductButton = styled.button`
+export const WishlistItemButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +73,7 @@ export const ProductButton = styled.button`
   line-height: 1.5rem;
   letter-spacing: -0.005em;
 
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 
   transition: background 0.4s;
   text-transform: uppercase;
@@ -115,7 +84,7 @@ export const ProductButton = styled.button`
   }
 `;
 
-export const ProductButtonAdded = styled(ProductButton)`
+export const WishlistItemButtonAdded = styled(WishlistItemButton)`
   background: var(--green-100);
 
   &,
@@ -124,6 +93,7 @@ export const ProductButtonAdded = styled(ProductButton)`
   }
 
   svg {
+    fill: transparent;
     margin-right: 1rem;
     font-size: 1.5rem;
     stroke-width: 2;

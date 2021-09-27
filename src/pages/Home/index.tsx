@@ -4,9 +4,11 @@ import Header from '../../components/Header';
 import Banners from '../../components/Banners';
 import Shelf from '../../components/Shelf';
 
+import { HomeContainer } from './styles';
+
 const Home: React.FC = () => {
   return (
-    <>
+    <HomeContainer>
       <Header />
 
       <Banners
@@ -22,7 +24,11 @@ const Home: React.FC = () => {
       />
 
       <Shelf collectionId="1" />
-    </>
+
+      <Shelf collectionId="2" />
+
+      <Shelf collectionId="3" />
+    </HomeContainer>
   );
 };
 

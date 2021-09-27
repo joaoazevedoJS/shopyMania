@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { FiHeart } from 'react-icons/fi';
 import { toast } from 'react-toastify';
+import { useWishlist } from '../../../hooks/useWishlist';
 
 import axiosAPI from '../../../services/axiosAPI';
 
@@ -10,6 +11,8 @@ import { WishlistButtonFunctionType } from './types/WishlistButtonFunctionType';
 
 const WishlistButton: WishlistButtonFunctionType = ({ productId }) => {
   const [isActive, setIsActive] = useState(false);
+
+  const { addWishlist, deleteWishlist } = useWishlist();
 
   useEffect(() => {
     axiosAPI.get(`/wishlist?product_id=${productId}`).then(response => {
@@ -22,30 +25,27 @@ const WishlistButton: WishlistButtonFunctionType = ({ productId }) => {
   const handleAddToWishList = useCallback(() => {
     setIsActive(true);
 
-    // add static id, because json-server only delete by id and don't with product_id
-
     axiosAPI
-      .post('/wishlist', {
-        id: productId,
-        user_id: '1',
-        product_id: productId,
+      .get(`/products?id=${productId}`)
+      .then(response => {
+        const { data } = response;
+
+        addWishlist(data[0]).catch(() => {
+          setIsActive(false);
+        });
       })
       .catch(() => {
-        toast.error('Aconteceu um erro ao adicionar o produto na sua lista');
-
         setIsActive(false);
       });
-  }, [productId]);
+  }, [addWishlist, productId]);
 
   const handleRemoveToWishList = useCallback(() => {
     setIsActive(false);
 
-    axiosAPI.delete(`/wishlist/${productId}`).catch(() => {
-      toast.error('Aconteceu um erro ao remover o produto na sua lista');
-
+    deleteWishlist(productId).catch(() => {
       setIsActive(true);
     });
-  }, [productId]);
+  }, [deleteWishlist, productId]);
 
   const handleActiveButton = useCallback(() => {
     if (isActive) {
