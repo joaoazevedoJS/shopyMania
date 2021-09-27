@@ -1,6 +1,8 @@
 import { useCallback, useMemo, useState } from 'react';
 import { FiCheck } from 'react-icons/fi';
 
+import { useCart } from '../../../hooks/useCart';
+
 import Price from '../../../utils/Price';
 
 import WishlistButton from '../../Wishlist/WishlistButton';
@@ -19,6 +21,8 @@ import { ShelfProductFunctionType } from './types/ShelfProductFunctionType';
 const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
   const [productAdded, setProductAdded] = useState(false);
 
+  const { addProduct } = useCart();
+
   const priceWithInstallment = useMemo(() => {
     return Price.addInstallmentRate({
       price: productProps.selling_price,
@@ -29,10 +33,12 @@ const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
   const handleAddToCart = useCallback(() => {
     setProductAdded(true);
 
+    addProduct(productProps.id);
+
     setTimeout(() => {
       setProductAdded(false);
     }, 3000);
-  }, []);
+  }, [addProduct, productProps.id]);
 
   return (
     <ProductContainer>

@@ -5,11 +5,18 @@ import { Link } from 'react-router-dom';
 import { LayoutContainer } from '../Layout/styles';
 
 export const HeaderContainer = styled.header`
+  position: sticky;
+  top: 0;
+
+  z-index: 999;
+
   width: 100%;
 
   padding: 1.5rem 0;
 
   background: var(--gray-0);
+
+  box-shadow: 0px 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
 `;
 
 export const HeaderContent = styled(LayoutContainer)`

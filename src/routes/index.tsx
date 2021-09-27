@@ -3,13 +3,19 @@ import { BrowserRouter, Switch } from 'react-router-dom';
 
 import Page from './Page';
 
-import { HomePage } from '../pages';
+import { HomePage, CartPage } from '../pages';
 
 const Routes: FC = () => (
   <BrowserRouter>
     <Switch>
       <Page path="/" exact title="Home | ShopyMania" component={HomePage} />
-      <Page path="/2" exact title="Home 2 | ShopyMania" component={HomePage} />
+
+      <Page
+        path="/cart"
+        exact
+        title="Resumo do carrinho | ShopyMania"
+        component={CartPage}
+      />
     </Switch>
   </BrowserRouter>
 );
