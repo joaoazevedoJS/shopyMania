@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { FiHeart } from 'react-icons/fi';
+import { toast } from 'react-toastify';
 
 import axiosAPI from '../../../services/axiosAPI';
 
@@ -30,7 +31,7 @@ const WishlistButton: WishlistButtonFunctionType = ({ productId }) => {
         product_id: productId,
       })
       .catch(() => {
-        alert('Aconteceu um erro ao adicionar o produto na sua lista');
+        toast.error('Aconteceu um erro ao adicionar o produto na sua lista');
 
         setIsActive(false);
       });
@@ -40,7 +41,7 @@ const WishlistButton: WishlistButtonFunctionType = ({ productId }) => {
     setIsActive(false);
 
     axiosAPI.delete(`/wishlist/${productId}`).catch(() => {
-      alert('Aconteceu um erro ao remover o produto na sua lista');
+      toast.error('Aconteceu um erro ao remover o produto na sua lista');
 
       setIsActive(true);
     });
