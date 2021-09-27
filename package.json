@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm run server & react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "server": "json-server db.json -p 3333"
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@types/node": "^12.0.0",
@@ -37,7 +36,6 @@
     "eslint-plugin-react-hooks": "^4",
     "git-commit-msg-linter": "^3.2.8",
     "husky": "^7.0.2",
-    "json-server": "^0.16.3",
     "lint-staged": "^11.1.2",
     "prettier": "^2.4.1"
   },
