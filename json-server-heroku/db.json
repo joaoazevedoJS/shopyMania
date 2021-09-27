@@ -164,11 +164,83 @@
       "installment_rate": 0
     }
   ],
-  "wishlist": [
+  "wishlist": [],
+  "banners": [
     {
       "id": "1",
-      "user_id": "1",
-      "product_id": "1"
+      "image_url": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+      "name": "Nike Air Max"
+    },
+    {
+      "id": "2",
+      "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+      "name": "Nike FREE"
+    },
+    {
+      "id": "3",
+      "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1412&q=80",
+      "name": "Daily Essentials"
+    },
+    {
+      "id": "4",
+      "image_url": "https://images.unsplash.com/photo-1511556820780-d912e42b4980?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "name": "Nick everyday"
+    },
+    {
+      "id": "5",
+      "image_url": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80",
+      "name": "curology product set with box"
+    },
+    {
+      "id": "6",
+      "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80",
+      "name": "Nick runner"
+    }
+  ],
+  "bannerCollection": [
+    {
+      "id": "1",
+      "type": "desktop",
+      "name": "Home page",
+      "banners": [
+        {
+          "id": "1",
+          "image_url": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+          "name": "Nike Air Max"
+        },
+        {
+          "id": "2",
+          "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+          "name": "Nike FREE"
+        },
+        {
+          "id": "3",
+          "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1412&q=80",
+          "name": "Daily Essentials"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "mobile",
+      "name": "Home page",
+      "banners": [
+        {
+          "id": "4",
+          "image_url": "https://images.unsplash.com/photo-1511556820780-d912e42b4980?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+          "name": "Nick everyday"
+        },
+        {
+          "id": "5",
+          "image_url": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80",
+          "name": "curology product set with box"
+        },
+        {
+          "id": "6",
+          "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80",
+          "name": "Nick runner"
+        }
+      ]
     }
   ]
 }

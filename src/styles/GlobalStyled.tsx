@@ -54,6 +54,20 @@ const GlobalStyled = createGlobalStyle`
       font-size: 87.5%;
     }
   }
+
+  .slick-arrow {
+    z-index: 2;
+
+    &.slick-prev {
+      left: 1.5rem;
+    }
+
+    &.slick-next {
+      right: 1.5rem;
+    }
+  }
+
+
 `;
 
 export default GlobalStyled;
