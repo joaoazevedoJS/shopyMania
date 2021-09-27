@@ -41,6 +41,11 @@ export const HeaderContent = styled(LayoutContainer)`
   }
 `;
 
+export const HeaderNavigation = styled.nav`
+  display: flex;
+  align-items: center;
+`;
+
 export const HeaderCart = styled(Link)`
   display: flex;
   align-items: center;
@@ -53,6 +58,7 @@ export const HeaderCart = styled(Link)`
     strong {
       display: block;
       color: var(--gray-600);
+      font-size: 1rem;
     }
 
     span {
