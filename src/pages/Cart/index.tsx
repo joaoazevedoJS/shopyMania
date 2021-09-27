@@ -1,12 +1,13 @@
 import { FC, useMemo } from 'react';
 
 import { CartListItem } from '../../components/Cart/CartListItem';
+import Header from '../../components/Header';
 
 import { useCart } from '../../hooks/useCart';
 
 import Price from '../../utils/Price';
 
-import { Container, Total } from './styles';
+import { CartResume, CartButton, Total } from './styles';
 
 const Cart: FC = () => {
   const { cart } = useCart();
@@ -20,21 +21,23 @@ const Cart: FC = () => {
   }, [cart]);
 
   return (
-    <Container>
-      <h1>Resumo do carrinho</h1>
+    <>
+      <Header />
 
-      <CartListItem />
+      <CartResume>
+        <CartListItem />
 
-      <footer>
-        <button type="button">Finalizar pedido</button>
+        <footer>
+          <Total>
+            <span>TOTAL</span>
 
-        <Total>
-          <span>TOTAL</span>
+            <strong>{Price.format({ price: total })}</strong>
+          </Total>
 
-          <strong>{Price.format({ price: total })}</strong>
-        </Total>
-      </footer>
-    </Container>
+          <CartButton type="button">Finalizar pedido</CartButton>
+        </footer>
+      </CartResume>
+    </>
   );
 };
 

@@ -4,14 +4,14 @@ export const Container = styled.table`
   width: 100%;
 
   thead th {
-    color: #999;
+    color: var(--gray-700);
     text-align: left;
     padding: 12px;
   }
 
   tbody td {
     padding: 12px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--gray-300);
   }
 
   img {
@@ -19,15 +19,20 @@ export const Container = styled.table`
   }
 
   strong {
-    color: #333;
     display: block;
+
+    color: var(--gray-900);
   }
 
   span {
     display: block;
-    margin-top: 5px;
-    font-size: 18px;
+
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+
     font-weight: bold;
+
+    color: var(--gray-700);
   }
 
   div {
@@ -35,11 +40,13 @@ export const Container = styled.table`
     align-items: center;
 
     input {
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      color: #444;
-      padding: 6px;
-      width: 50px;
+      border: 1px solid var(--gray-300);
+      border-radius: 0.25rem;
+
+      color: var(--gray-600);
+
+      padding: 0.375rem;
+      width: 3.125rem;
       text-align: center;
     }
   }
@@ -50,7 +57,7 @@ export const Container = styled.table`
     padding: 6px;
 
     svg {
-      color: #0079ff;
+      color: var(--green-400);
       transition: color 0.2s;
     }
 
@@ -62,7 +69,8 @@ export const Container = styled.table`
 
     &:disabled {
       svg {
-        color: var(--green-600);
+        color: var(--green-500);
+        opacity: 0.5;
         cursor: not-allowed;
       }
     }
@@ -71,20 +79,20 @@ export const Container = styled.table`
   @media (max-width: 800px) {
     tbody td,
     thead th {
-      padding: 4px;
-      font-size: 14px;
+      padding: 0.25rem;
+      font-size: 0.875rem;
     }
 
     td:nth-child(2) {
       strong {
-        font-size: 12px;
+        font-size: 0.75rem;
       }
     }
   }
 
   @media (max-width: 700px) {
     img {
-      height: 70px;
+      height: 4.375rem;
     }
 
     th:first-child,
@@ -100,13 +108,13 @@ export const Container = styled.table`
     }
 
     img {
-      height: 50px;
+      height: 3.125rem;
     }
 
     div {
       input {
-        padding: 2px;
-        width: 35px;
+        padding: 0.125rem;
+        width: 2.1875rem;
       }
     }
   }

@@ -2,54 +2,19 @@ import styled from 'styled-components';
 
 import { LayoutContainer } from '../../components/Layout/styles';
 
-export const Container = styled(LayoutContainer)`
-  padding: 30px;
-  background: #fff;
-  border-radius: 4px;
+export const CartResume = styled(LayoutContainer)`
+  padding: 1.875rem;
+  margin-top: 2rem;
+
+  background: var(--gray-0);
+  border-radius: 0.25rem;
 
   footer {
-    margin-top: 30px;
+    margin-top: 1.875rem;
+
     display: flex;
     flex-direction: column;
-
-    justify-content: space-between;
-    align-items: center;
-
-    div {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-
-      p {
-        background: #b4eda7;
-        color: #398c0d;
-        line-height: 145%;
-        padding: 8px 16px;
-        border-radius: 16px;
-        margin: 0 64px;
-        margin-left: 0;
-        text-align: center;
-      }
-    }
-
-    button {
-      width: 100%;
-      margin-top: 24px;
-      order: 1;
-      background: #0079ff;
-      color: #fff;
-      border: 0;
-      border-radius: 4px;
-      padding: 12px 20px;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: background 0.2s;
-
-      &:hover {
-        background: var(--green-600);
-      }
-    }
+    align-items: flex-end;
 
     @media (max-width: 690px) {
       div {
@@ -60,11 +25,42 @@ export const Container = styled(LayoutContainer)`
         p {
           width: 100%;
           margin: 0;
-          font-size: 12px;
-          margin-bottom: 24px;
+          font-size: 0.75rem;
+          margin-bottom: 1.5rem;
         }
       }
     }
+  }
+`;
+
+export const CartButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  background: var(--green-400);
+  color: var(--gray-0);
+
+  border: 0;
+  border-radius: 0.3125rem;
+
+  padding: 0.75rem 1rem;
+
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.005em;
+
+  margin-top: 2rem;
+
+  transition: background 0.4s;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active {
+    background: var(--green-600);
   }
 `;
 
@@ -73,15 +69,15 @@ export const Total = styled.section`
   align-items: baseline;
 
   span {
-    color: #999;
+    color: var(--gray-700);
     font-weight: bold;
-    margin-right: 16px;
+    margin-right: 1rem;
   }
 
   strong {
-    color: #444;
+    color: var(--gray-900);
     font-weight: bold;
-    font-size: 28px;
-    margin-left: 5px;
+    font-size: 1.75rem;
+    margin-left: 0.3125rem;
   }
 `;
