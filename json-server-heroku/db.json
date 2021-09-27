@@ -24,11 +24,44 @@
     },
     {
       "id": "3",
-      "selling_price": 259900,
-      "price": 281399,
+      "selling_price": 159900,
+      "price": 181399,
       "installment_id": "6",
       "installment": 6,
       "installment_rate": 3,
+      "has_installment_rate": true,
+      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+    },
+    {
+      "id": "4",
+      "selling_price": 229900,
+      "price": 231399,
+      "installment_id": "12",
+      "installment": 12,
+      "installment_rate": 6,
+      "has_installment_rate": true,
+      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+    },
+    {
+      "id": "5",
+      "selling_price": 259900,
+      "price": 281399,
+      "installment_id": "10",
+      "installment": 10,
+      "installment_rate": 5,
+      "has_installment_rate": true,
+      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+    },
+    {
+      "id": "6",
+      "selling_price": 259900,
+      "price": 281399,
+      "installment_id": "10",
+      "installment": 10,
+      "installment_rate": 5,
       "has_installment_rate": true,
       "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
       "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
@@ -37,7 +70,7 @@
   "collections": [
     {
       "id": "1",
-      "name": "Launched products",
+      "name": "Lançamentos",
       "products": [
         {
           "id": "1",
@@ -58,6 +91,150 @@
           "installment": 10,
           "installment_rate": 0,
           "has_installment_rate": false,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "3",
+          "selling_price": 159900,
+          "price": 181399,
+          "installment_id": "6",
+          "installment": 6,
+          "installment_rate": 3,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "4",
+          "selling_price": 229900,
+          "price": 231399,
+          "installment_id": "12",
+          "installment": 12,
+          "installment_rate": 6,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "5",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 5,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "6",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 5,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Mais vendidos",
+      "products": [
+        {
+          "id": "3",
+          "selling_price": 159900,
+          "price": 181399,
+          "installment_id": "6",
+          "installment": 6,
+          "installment_rate": 3,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "4",
+          "selling_price": 229900,
+          "price": 231399,
+          "installment_id": "12",
+          "installment": 12,
+          "installment_rate": 6,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "5",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 5,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Talvez você possa gostar",
+      "products": [
+        {
+          "id": "1",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 5,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "2",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 0,
+          "has_installment_rate": false,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "3",
+          "selling_price": 159900,
+          "price": 181399,
+          "installment_id": "6",
+          "installment": 6,
+          "installment_rate": 3,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "4",
+          "selling_price": 229900,
+          "price": 231399,
+          "installment_id": "12",
+          "installment": 12,
+          "installment_rate": 6,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "5",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 5,
+          "has_installment_rate": true,
           "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
           "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
         }
@@ -164,7 +341,18 @@
       "installment_rate": 0
     }
   ],
-  "wishlist": [],
+  "wishlist": [
+    {
+      "id": "5",
+      "user_id": "1",
+      "product_id": "5"
+    },
+    {
+      "id": "1",
+      "user_id": "1",
+      "product_id": "1"
+    }
+  ],
   "banners": [
     {
       "id": "1",

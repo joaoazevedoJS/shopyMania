@@ -8,7 +8,6 @@ export const ProductContainer = styled.div`
 
   padding: 2rem;
 
-  max-width: 19rem;
   width: 100%;
 
   flex: 1;

@@ -58,6 +58,12 @@ const GlobalStyled = createGlobalStyle`
   .slick-arrow {
     z-index: 2;
 
+    &::after,
+    &::before {
+      color: var(--gray-900);
+      font-size: 2rem;
+    }
+
     &.slick-prev {
       left: 1.5rem;
     }
@@ -66,8 +72,6 @@ const GlobalStyled = createGlobalStyle`
       right: 1.5rem;
     }
   }
-
-
 `;
 
 export default GlobalStyled;
