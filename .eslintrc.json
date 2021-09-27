@@ -39,6 +39,7 @@
     "react/require-default-props": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "class-methods-use-this": "off",
+    "no-param-reassign": "off",
     "react/jsx-filename-extension": [
       1,
       {

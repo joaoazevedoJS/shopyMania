@@ -3,13 +3,15 @@ import { useEffect, useState } from 'react';
 import axiosAPI from '../../services/axiosAPI';
 
 import ShelfProduct from './ShelfProduct';
-import { IShelfProduct } from './ShelfProduct/types/ShelfProductProps';
+import Layout from '../Layout';
+
+import { Products } from '../../models/Products';
 
 import { ShelfFunctionType } from './types/ShelfFunctionType';
 
 const Shelf: ShelfFunctionType = ({ collectionId }) => {
   const [collectionName, setCollectionName] = useState('');
-  const [products, setProducts] = useState<IShelfProduct[]>([]);
+  const [products, setProducts] = useState<Products[]>([]);
 
   useEffect(() => {
     axiosAPI
@@ -24,13 +26,13 @@ const Shelf: ShelfFunctionType = ({ collectionId }) => {
   }, [collectionId]);
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr' }}>
+    <Layout>
       <h3>{collectionName}</h3>
 
       {products.map(product => (
         <ShelfProduct key={product.id} productProps={product} />
       ))}
-    </div>
+    </Layout>
   );
 };
 
