@@ -3,6 +3,8 @@ import { FiCheck } from 'react-icons/fi';
 
 import Price from '../../../utils/Price';
 
+import WishlistButton from '../../Wishlist/WishlistButton';
+
 import {
   ProductButton,
   ProductButtonAdded,
@@ -25,7 +27,6 @@ const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
   }, [productProps]);
 
   const handleAddToCart = useCallback(() => {
-    console.log('add');
     setProductAdded(true);
 
     setTimeout(() => {
@@ -41,6 +42,8 @@ const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
           alt={productProps.description}
           title={productProps.description}
         />
+
+        <WishlistButton productId={productProps.id} />
       </ProductImage>
 
       <ProductDescription>{productProps.description}</ProductDescription>
